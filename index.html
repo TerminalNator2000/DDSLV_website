@@ -1,57 +1,14 @@
+# Compiling the complete HTML and CSS files, including the LinkedIn button
 
+# Complete HTML content with LinkedIn button
+html_content = """
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="style.css">
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Data Solutions LV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-        .service-item {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 15px;
-            width: 30%;
-            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-        }
-        .contact {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -126,7 +83,8 @@
     <p>Let’s discuss how we can help your business stay secure and competitive in today’s digital landscape.</p>
     <p>Phone: 346-689-6511</p>
     <p>Email: info@dynamicdatasolutionslv.com</p>
-    <p>Location: Las Vegas, NV</p>
+    <p>Location: Houston, TX</p>
+    <a href="https://www.linkedin.com/in/mark-nations-93362b32a" target="_blank" class="linkedin-button">Visit My LinkedIn</a>
 </section>
 
 <footer>
@@ -135,3 +93,7 @@
 
 </body>
 </html>
+"""
+
+
+
