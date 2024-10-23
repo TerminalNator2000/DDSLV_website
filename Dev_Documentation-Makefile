@@ -1,0 +1,53 @@
+# Web_Dev Documentation
+
+# A Makefile can automate tasks such as building, running, and cleaning up your website project. Below is a basic Makefile for your website that covers some common tasks:
+
+Makefile
+makefile
+
+# Variables
+HTML_FILE = Dynamic_Data_Solutions_LV.html
+CSS_FILE = style.css
+WEB_DIR = ./web
+
+# Targets
+.PHONY: all clean build run
+
+# Default target
+all: build
+
+# Build target - organizes HTML and CSS into the web directory
+build:
+	mkdir -p $(WEB_DIR)
+	cp $(HTML_FILE) $(WEB_DIR)/
+	cp $(CSS_FILE) $(WEB_DIR)/
+
+# Run target - opens the HTML file in the default browser
+run: build
+	@echo "Opening the website..."
+	open $(WEB_DIR)/$(HTML_FILE)
+
+# Clean target - removes the build directory
+clean:
+	@echo "Cleaning up..."
+	rm -rf $(WEB_DIR)
+Explanation:
+Variables:
+
+# HTML_FILE and CSS_FILE point to your HTML and CSS files.
+# WEB_DIR is where the built files will be placed.
+# Targets:
+
+# all: The default target that calls build.
+# build: Copies the HTML and CSS files into a web directory, organizing the project structure.
+# run: Opens the HTML file in your default browser (works on macOS and Linux; for Windows, use start).
+# clean: Removes the web directory to clean up the build.
+
+# How to Use the Makefile
+# Save the code above in a file named Makefile in the root of your project directory.
+# Open a terminal in your project directory and run:
+# make or make all: Builds the project.
+# make run: Opens the website in your default browser.
+# make clean: Cleans up the build directory.
+
+This setup automates the process of building, running, and cleaning your website files, making it easier to manage.
