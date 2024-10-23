@@ -1,4 +1,11 @@
-# Web_Dev Documentation
+# Web_Dev Documentation: The .makefile allows you to build your project in Powershell, BASH, or CLI (Terminal) 
+# 1. Save your project locally to a file, go to properties of said file and ctrl + c (copy path) cd into your project folder
+# $ cd cntrl + v then hit enter
+#          This will cd (change directory,) into your project folder, allowing you to dev via a local host i.e. local host 5000, etc.
+# Now in your project directory cd run:
+# make or make all: Builds the project.
+# make run: Opens the website in your default browser.
+# make clean: Cleans up the build directory.
 
 # A Makefile can automate tasks such as building, running, and cleaning up your website project. Below is a basic Makefile for your website that covers some common tasks:
 
@@ -30,9 +37,11 @@ run: build
 # Clean target - removes the build directory
 clean:
 	@echo "Cleaning up..."
-	rm -rf $(WEB_DIR)
-Explanation:
-Variables:
+	rm -rf $(WEB_DIR) 
+
+# Explanation:
+
+# Variables:
 
 # HTML_FILE and CSS_FILE point to your HTML and CSS files.
 # WEB_DIR is where the built files will be placed.
@@ -43,11 +52,6 @@ Variables:
 # run: Opens the HTML file in your default browser (works on macOS and Linux; for Windows, use start).
 # clean: Removes the web directory to clean up the build.
 
-# How to Use the Makefile
-# Save the code above in a file named Makefile in the root of your project directory.
-# Open a terminal in your project directory and run:
-# make or make all: Builds the project.
-# make run: Opens the website in your default browser.
-# make clean: Cleans up the build directory.
+
 
 This setup automates the process of building, running, and cleaning your website files, making it easier to manage.
