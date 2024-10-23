@@ -42,21 +42,21 @@ Build the Project:
 bash
 
 $ make
-This command creates a web directory and copies the Dynamic_Data_Solutions_LV.html and style.css files into it. This organizes the project structure for deployment.
+# This command creates a web directory and copies the Dynamic_Data_Solutions_LV.html and style.css files into it. This organizes the project structure for deployment.
 
-Run the Website:
+# Run the Website:
 
 bash
 Copy code
 make run
 This command opens the website in your default web browser. Ensure that a browser is installed and configured as the default on your system.
 
-Clean Up the Project:
+# Clean Up the Project:
 
-bash
-Copy code
-make clean
-This command removes the web directory, cleaning up the project structure.
+# bash
+# Copy code
+# make clean
+# This command removes the web directory, cleaning up the project structure.
 
 Contact
 If you have any questions or need further assistance, please reach out:
